@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematikspiel mit Matrizen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Mathematikspiel: Matrixkalkulation</h1>
+    
+    <button id="generateButton">Neue Matrizen generieren</button>
+    
+    <div id="matrices">
+        <p><strong>Matrix A:</strong></p>
+        <div id="matrixA"></div>
+        <p><strong>Matrix B:</strong></p>
+        <div id="matrixB"></div>
+    </div>
+    
+    <label for="operation">Wählen Sie die Operation:</label>
+    <select id="operation">
+        <option value="addition">Addition</option>
+        <option value="subtraction">Subtraktion</option>
+        <option value="multiplication">Multiplikation</option>
+    </select>
+
+    <p>Geben Sie Ihre Lösung ein (Zeilen durch Semikolon getrennt, Werte durch Komma):</p>
+    <input type="text" id="userSolution" placeholder="z.B. 1,2;3,4">
+    
+    <button id="submitButton">Antwort überprüfen</button>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
